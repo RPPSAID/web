@@ -1,0 +1,113 @@
+<index finalhtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style> 
+     
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        display:flex;
+        flex-direction:column ;
+        min-height: 100vh;
+    }
+    .menu {
+        list-style: none;
+        padding: 0;
+margin:0 ;
+display: flex;
+width: 100%;
+background: #000000;
+
+    }
+     .menu li{
+        position: relative;
+padding: 15px;
+cursor: pointer;
+border-right: 1px solid white;
+     }
+    .menu li:last-child {
+        border-right: none;
+
+    }
+    .menu a {
+        color: white;/*enlace en blanco*/
+        text-decoration: none;/*quitar sub rallado */
+        font-weight: bold;
+    }
+
+    .menu a:hover  {
+        color: #01ddff;/*cambia el color al pasar el mouse*/
+
+    }
+    .submenu {
+        display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background:rgb(255,255,255) ;
+color: black;
+border: 1px solid #050505;
+border-radius: 10px;
+width: max-content;
+    }
+.menu li.hover .submenu{
+    display: block;
+}
+.content{
+    padding: 20xp;
+    
+}
+table {  
+    width: 100%;
+    border-collapse: collapse;
+margin-top: 20px;
+border: 2px solid  black;
+}
+th, th {
+    padding: 10px;
+text-align: left;
+border: 2px solid black;
+}
+ </style>
+</head>
+<body>
+
+
+<ul class="menu">
+i>
+<li><a href="">SOBRE NOSOTROS</a></li>
+<li><a href="file:///C:/Users/said/Desktop/desarollo%20web/oferta%20academica.html">OFERTA ACADÉMICA</a></li>
+<li><a href="file:///C:/Users/said/Desktop/desarollo%20web/maestros%202025.html">ESTUDIANTES Y MAESTROS</a></li>
+<li><a href="file:///C:/Users/said/Desktop/archivos%20importantes/carusel.html">GALERÍA</a></li>
+<li><a href="file:///C:/Users/said/Desktop/archivos%20importantes/carusel.html">CONTACTO</a></li>
+</ul>
+<div class="content">
+    <table width="100%">
+        <tr>
+            <th colspan="2"><h2>COLEGIO TÉCNICO OFICIAL RAFAEL PINEDA PONCE</h2></th>
+        </tr>
+        <tr>
+            <td>NOMBRE DEL COLEGIO</td>
+            <td>INSTITUTO TÉCNICO OFICIAL RAFAEL PINEDA PONCE</td>
+        </tr>
+        <tr>
+            <td>UBICACIÓN</td>
+            <td>Tela, atlantida</td>
+        </tr>
+        <tr>
+            <td>ESPECIALIDAD</td>
+            <td>INFORMÁTICA Y TECNOLOGÍA</td>
+        </tr>
+        <tr>
+            <td>CONTACTO</td>
+            <td>intiturafelpp@gmail.com</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
