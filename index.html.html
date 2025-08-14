@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+      color: #2c3e50;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      background-color: #004d40;
+      flex-wrap: wrap;
+    }
+
+    .menu li {
+      padding: 15px 20px;
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #0092fb;
+    }
+
+    .content {
+      max-width: 95%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .imagen-giratoria {
+      width: 400px;
+      height: 400px;
+      animation: girarYInverso 6s linear infinite;
+      transform-style: preserve-3d;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes girarYInverso {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+
+    table {
+      width: 100%;
+      max-width: 1000px; /* tabla más grande */
+      font-size: 20px; /* fuente más grande */
+      border-collapse: collapse;
+      background-color: #f8f9fa;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #bbb;
+      padding: 20px 25px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #004d40;
+      color: white;
+      font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+      .info-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .imagen-giratoria {
+        width: 250px;
+        height: 250px;
+      }
+
+      table {
+        font-size: 18px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="menu">
+    <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+    <li><a href="ofertaacademica.html">OFERTA ACADÉMICA</a></li>
+    <li><a href="maestro2025.html">ESTUDIANTES Y MAESTROS</a></li>
+    <li><a href="carusel.html">GALERÍA</a></li>
+    <li><a href="contacto.html">CONTACTO</a></li>
+  </ul>
+
+  <div class="content">
+    <div class="info-container">
+      <img src="logo colegio png.png" alt="Logo del Instituto" class="imagen-giratoria">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Información</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>INSTITUTO</td>
+            <td>Instituto Técnico Oficial Rafael Pineda Ponce</td>
+          </tr>
+          <tr>
+            <td>UBICACIÓN</td>
+            <td>Santiago, Tela, Atlántida</td>
+          </tr>
+          <tr>
+            <td>ESPECIALIDAD</td>
+            <td>Bachillerato y Técnico</td>
+          </tr>
+          <tr>
+            <td>CONTACTO</td>
+            <td>info@colegio.tech</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
