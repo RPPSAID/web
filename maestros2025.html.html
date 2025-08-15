@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maestros y Estudiantes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #daeaf6, #f8f9fa);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 30px;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .menu li {
+      position: relative;
+      background: #2980b9;
+      padding: 12px 25px;
+      color: #ffffff;
+      cursor: pointer;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu li:hover {
+      background-color: #1c5e8d;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      color: black;
+      border-radius: 8px;
+      min-width: 220px;
+      z-index: 1000;
+      box-shadow: 0 6px 16px rgb(79, 152, 208); /* Sombra azul */
+      padding: 10px;
+    }
+
+    .submenu table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px solid #e74c3c; /* borde rojo */
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgb(0, 153, 255);
+      background: #fef6f5;
+      overflow: hidden;
+    }
+
+    .submenu th {
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .submenu td {
+      padding: 10px;
+    }
+
+    .submenu a {
+      display: block;
+      background-color: #16a085;
+      color: white;
+      text-align: center;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .submenu a:hover {
+      background-color: #138d75;
+      transform: scale(1.05);
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    .boton-volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #27ae60;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s;
+      box-shadow: 0 6px 16px rgba(41, 128, 185, 0.4);
+    }
+
+    .boton-volver:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .menu li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .submenu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        margin-top: 10px;
+        padding: 0;
+      }
+
+      .submenu table {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background: transparent;
+      }
+
+      .submenu th {
+        border-radius: 0;
+        background-color: #2980b9;
+        color: white;
+      }
+
+      .submenu a {
+        background-color: #3498db;
+        margin: 5px 0;
+      }
+
+      .submenu a:hover {
+        background-color: #1c5e8d;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h3>MAESTROS Y ESTUDIANTES</h3>
+
+    <div class="menu-container">
+      <ul class="menu">
+        <li>MAESTROS 
+          <div class="submenu">
+            <table>
+              <tr><th>MAESTROS</th></tr>
+              <tr><td><a href="file:///C:/Users/said/Desktop/desarollo%20web/PROYECTOS/Secretariado%20educación.pdf" target="_blank">Maestros 2025</a></td></tr>
+              <tr><td><a href="#">Maestros 2024</a></td></tr>
+              <tr><td><a href="#">Maestros 2023</a></td></tr>
+            </table>
+          </div>
+        </li>
+
+        <li>ESTUDIANTES  
+          <div class="submenu">
+            <table>
+              <tr><th>ESTUDIANTES</th></tr>
+              <tr><td><a href="#">Estudiantes 2025</a></td></tr>
+              <tr><td><a href="#">Estudiantes 2024</a></td></tr>
+              <tr><td><a href="#">Estudiantes 2023</a></td></tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <a class="boton-volver" href="file:///C:/Users/said/Desktop/desarollo%20web/PROYECTOS/index.html">← Volver a la Página Principal</a>
+  </div>
+
+</body>
+</html>
